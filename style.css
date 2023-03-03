@@ -1,0 +1,167 @@
+:root{
+    /*Primary*/
+    --Blue: hsl(223, 87%, 63%);
+    /*Secondary*/
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    /*Neutral*/
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+/*font-family: 'Libre Franklin', sans-serif;*/
+/*- Mobile: 375px
+- Desktop: 1440px*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.card-princip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    color: var(--Gray);
+    font-weight: 300;
+    margin: 24px 0 20px 0;
+}
+
+.titulo > span{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    margin: 0 0 0 4px;
+}
+
+.subtitulo{
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0 0 29px 0;
+}
+
+#email{
+        border-radius: 20px;
+        border: 1px solid var(--Gray);
+        height: 32px;
+        width: 190px;
+        padding: 0 0 0 15px;
+    }
+
+    input::placeholder{
+        color: var(--Gray);
+        padding: 0 0 0 20px;
+        font-weight: 300;
+    }
+
+button{
+    background-color: var(--Blue);
+    border-radius: 20px;
+    border-style: none;
+    height: 32px;
+    width: 207px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 5px 9px 4px var(--Pale-Blue);
+}
+
+.icon{
+    display: flex;
+}
+
+.icon_iten{
+    margin: 10px;
+    border: 1px solid var(--Gray);
+    border-radius: 30px;
+}
+
+.face{
+    padding: 9px 15px;
+}
+
+.twit{
+    padding: 9px 11px;
+}
+
+.insta{
+    padding: 9px 12px;
+}
+
+.fab{
+    color: var(--Blue);
+}
+
+.text{
+    color: var(--Gray);
+    font-weight: 300;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 1440px){
+    .card-princip{
+        margin-top: 50px;
+    }
+
+    .box-form{
+        display: flex;
+    }
+
+    #email{
+        height: 35px;
+        width: 254px;
+    }
+
+    button{
+        margin: 0 0 0 15px;
+        height: 35px;
+        width: 140px;
+    }
+
+    .imagem{
+        background-image: url(images/illustration-dashboard.png);
+        background-repeat: no-repeat;
+        background-size: 461px;
+        background-position: 11px;
+        width: 480px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card-princip{
+        margin: 120px 0 0 0;
+    }
+
+    .box-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        margin: 10px 0;
+        height: 32px;
+        width: 207px;
+    }
+
+    .imagem{
+        background-image: url(images/illustration-dashboard.png);
+        background-repeat: no-repeat;
+        background-size: 319px;
+        background-position: 18px;
+        width: 350px;
+        height: 300px;
+    }
+
+    .icon{
+        margin-top: 74px;
+    }
+
+}
+
+
+
